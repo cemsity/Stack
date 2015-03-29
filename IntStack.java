@@ -2,19 +2,21 @@ public class IntStack implements StackIntADT
 {
    // fields
    int[] stack;
-   int pointer;
+   int pointer, size;
    
    // constructors
-   public IntStack( int size)
+   public IntStack( int sizes)
    {
-      stack = new int[size];
+      stack = new int[sizes];
       pointer = -1; 
+      size = sizes;
    }//end construct 1 
    
    public IntStack()
    {
       stack = new int[10];
       pointer = -1; 
+      size = 10;
    }//end construct default
    
    
@@ -69,7 +71,7 @@ public class IntStack implements StackIntADT
    
    public boolean isFull()  // check fullness
    {
-   return pointer == stack.length;
+   return pointer == (size - 1);
    }
   
    public int size()  // chekcs size 
