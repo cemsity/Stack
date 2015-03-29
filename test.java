@@ -8,7 +8,12 @@ public class test
       s.push(j);
       System.out.println(s.peek());
     
-   }
+   }//end for loop j
+   for (int i= 0; i<6; i++)
+   {
+      System.out.println(s.pop());
+      
+   }//end for loop i
    }//end main function
    
    

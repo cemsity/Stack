@@ -41,11 +41,13 @@ public class IntStack implements StackIntADT
    
       if (!isEmpty())
       {
-         pointer--;
+         
          popped = stack[pointer];
+         pointer--;
       }//end if 
       else
       {
+       System.out.println("Stack is Empty");
        popped = 0;
       }//end else
    
