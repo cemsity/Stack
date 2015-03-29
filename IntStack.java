@@ -1,8 +1,8 @@
 public class IntStack implements StackIntADT
 {
    // fields
-   int[] stack;
-   int pointer, size;
+   private int[] stack;
+   private int pointer, size;
    
    // constructors
    public IntStack( int sizes)
